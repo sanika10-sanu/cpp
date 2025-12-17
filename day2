@@ -1,0 +1,23 @@
+#include <iostream>
+
+void swapByValue(int a, int b) {
+    std::cout << "Inside function: a = " << a << ", b = " << b << std::endl;
+    int temp = a;
+    a = b;
+    b = temp;
+    std::cout << "Inside function: a = " << a << ", b = " << b << std::endl;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 10;
+
+    std::cout << "Before calling swap function: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+
+    
+    swapByValue(num1, num2);
+
+    std::cout << "After calling swap function: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+
+    return 0;
+}
