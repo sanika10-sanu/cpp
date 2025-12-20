@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int add(int a, int b, int c, int d) {
+    return a + b + c + d;
+}
+
+int main() {
+    int a, b, c, d;
+    cout << "Enter 4 numbers: ";
+    cin >> a >> b >> c >> d;
+
+    cout << "Sum = " << add(a, b, c, d);
+    return 0;
+}
